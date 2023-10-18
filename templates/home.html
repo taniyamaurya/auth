@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin-top: 50px;
+}
+
+.navigation {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto; /* Center the navigation bar horizontally */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.navigation a:hover {
+    font-weight: bold;
+}
+
+/* You can add more styles as needed */
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to home page</h1>
+    
+    <div class="navigation">
+        <!-- Your other navigation links -->
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+</html>
